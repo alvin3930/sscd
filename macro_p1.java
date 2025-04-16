@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class macro_1 {
+public class macro_p1 {
     public static void main(String[] args) {
         BufferedReader reader;
 

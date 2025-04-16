@@ -6,12 +6,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MacroExpander {
+public class macro_p2 {
    private static Map<String, Integer> mntTable = new HashMap();
    private static List<String> mdtTable = new ArrayList();
    private static Map<Integer, String> alaTable = new HashMap();
 
-   public MacroExpander() {
+   public macro_p2() {
    }
 
    public static void main(String[] var0) throws IOException {

@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.*;
 
-public class ALP_Pass2 {
+public class ass_p2 {
 
     public static void main(String[] args) {
         List<String[]> intermediateCode = new ArrayList<>();

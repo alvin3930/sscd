@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class alp_pass1_simple {
+public class alp_pass1 {
     private static final String[][] Optab = {
         {"START", "AD", "01"},
         {"END", "AD", "02"},

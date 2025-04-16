@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.*;
 
-public class SimpleAssemblerPass1 {
+public class ass_p1 {
 
     static String[][] optab = {
         {"START", "AD", "01"}, {"END", "AD", "02"}, {"MOVER", "IS", "01"},
