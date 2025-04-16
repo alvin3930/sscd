@@ -1,0 +1,4 @@
+flex lexfile.l
+gcc lex.yy.cc
+
+./a.out
