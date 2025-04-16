@@ -5,24 +5,19 @@
 #define FAILED 0
 #define MAX_STACK_SIZE 100
 
-
 int E(), Edash(), T(), Tdash(), F();
-
 
 const char *cursor;
 char string[64];
 
-
 char stack[MAX_STACK_SIZE];
-int top = -1; 
-
+int top = -1;
 
 void push(char c) {
-    if (top < MAX_STACK_SIZE - 1) {
-        stack[++top] = c;
+    if (top < MAX_STACK_SIZE -1) {
+        stack[++top] = c;    
     }
 }
-
 
 void pop() {
     if (top >= 0) {
@@ -30,14 +25,12 @@ void pop() {
     }
 }
 
-
 void printStack() {
-    for (int i = 0; i <= top; i++) {
+    for(int i = 0; i <= top; i++) {
         printf("%c", stack[i]);
     }
     printf("\n");
 }
-
 
 void printAction(const char *rule) {
     printf("%-16s %-20s", cursor, rule);
@@ -45,9 +38,8 @@ void printAction(const char *rule) {
 }
 
 int main() {
-    //printf("Enter the string: ");
-    //scanf("%s", string);  
     strcpy(string, "i*i");
+
     cursor = string;
 
     printf("\nInput          Action                Stack\n");
@@ -63,7 +55,6 @@ int main() {
         return 1;
     }
 }
-
 
 int E() {
     printAction("Deriving E -> TE'");
@@ -92,7 +83,7 @@ int Edash() {
         }
         return FAILED;
     } else {
-        printAction("Reducing E' -> ε");  
+        printAction("Reducing E' -> ep");  
         return SUCCESS;
     }
 }
